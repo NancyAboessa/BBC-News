@@ -1,7 +1,11 @@
+import 'package:commingback/core/helper/dio_helper.dart';
 import 'package:commingback/feature/home/view/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  Future.wait([
+    DioHelper.init(),
+  ]);
   runApp(const MyApp());
 }
 
@@ -15,4 +19,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

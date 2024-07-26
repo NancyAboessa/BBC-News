@@ -18,7 +18,7 @@ class HomeCubit extends Cubit<HomeState> {
       "sources":"bbc-news",},
     );
     if(response.statusCode==200){
-     debugPrint(response.data);
+     debugPrint("${response.data}");
      newsModel=NewsModel.fromJson(response.data);
     emit(GetNewsSuccessState());
     }else
