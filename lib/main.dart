@@ -6,6 +6,7 @@ void main() {
   Future.wait([
     DioHelper.init(),
   ]);
+  //مش عارف كنتي هتعملي اي من غيري
   runApp(const MyApp());
 }
 
@@ -18,4 +19,5 @@ class MyApp extends StatelessWidget {
       home: HomeScreen(),
     );
   }
+  //Muath Sharawy
 }
