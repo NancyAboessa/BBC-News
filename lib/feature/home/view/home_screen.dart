@@ -14,17 +14,13 @@ class HomeScreen extends StatelessWidget {
       create: (context) => HomeCubit()..getNews(),
       child: BlocBuilder<HomeCubit, HomeState>(
         builder: (context, state) {
-          return  Scaffold(
+          return   Scaffold(
             body: Padding(
-              padding: EdgeInsets.all(10.r,),
+
+              padding: EdgeInsets.all(10.r),
               child: Column(
                 children: [
-               ClipRRect(
-                 borderRadius: BorderRadius.circular(20.r,),
-                 child: Image.asset(AppImages.newsPicture,
-                 height: 300.w,width: 300.w,
-                 ),
-               ),
+                  Text('ppppppppppppppppp'),
                 ],
               ),
             ),
